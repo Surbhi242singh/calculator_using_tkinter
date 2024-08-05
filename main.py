@@ -38,13 +38,13 @@ root.title('Calculator')
 root.iconbitmap('favicon.ico')
 root.config(background='black')
 root.geometry('280x350')
-root.resizable(0,0)               #no movement in any direction
+root.resizable(0,0)              
 
 res_lbl=Label(root,text='',bg='black',fg='white')
-res_lbl.grid(row=0,column=0,columnspan=5,pady=(50,10),padx=(10),sticky='w')           #top-left
+res_lbl.grid(row=0,column=0,columnspan=5,pady=(50,10),padx=(10),sticky='w')         
 res_lbl.config(font=('verdana',20,'bold'))
 
-btn7=Button(root,text='7',bg='#939E8F',fg='white',width=5,height=2,command=lambda: disp_digit(7))         #lambda used for calling function with parameter
+btn7=Button(root,text='7',bg='#939E8F',fg='white',width=5,height=2,command=lambda: disp_digit(7))   
 btn7.grid(row=1,column=0)
 btn7.config(font=('verdana',14))
 
